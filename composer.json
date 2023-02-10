@@ -1,0 +1,34 @@
+{
+    "name": "maleficarum/bi-publisher",
+    "license": "proprietary",
+    "description": "BI publisher component",
+    "require": {
+        "php": "^7.2",
+        "php-amqplib/php-amqplib": "2.11",
+        "maleficarum/ioc": "^3.0",
+        "maleficarum/command": "^5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Maleficarum\\Rabbitmq\\": "src/Rabbitmq/"
+        }
+    },
+    "autoload-dev": {
+        "files": [
+            "test/TestCase.php"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:pharaun13/maleficarum-ioc.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:pharaun13/maleficarum-command.git"
+        }
+    ]
+}
